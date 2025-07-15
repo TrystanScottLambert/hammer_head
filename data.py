@@ -17,7 +17,7 @@ def scrape_all_mock_data(
     a DataFrame of all the values. Essentially one large table.
     """
     mock_hdf5_list = np.array(glob.glob(f"{directory}{mock_file_prefix}*.hdf5"))
-    mock_hdf5_list_sort_idx = np.argsort([f"{name.split('.')[1]:0>2}"] for name in mock_hdf5_list)
+    mock_hdf5_list_sort_idx = np.argsort([f"{name.split('.')[1]:0>2}" for name in mock_hdf5_list])
     mock_hdf5_list = mock_hdf5_list[mock_hdf5_list_sort_idx]
     galaxy_dfs = []
     group_dfs = []
