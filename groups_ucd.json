@@ -20,4 +20,4 @@
     "n_galaxies_total": "meta.number",
     "n_galaxies_selected": "meta.number",
     "flag": "meta.code.qual"
-  }
+}

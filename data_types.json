@@ -1,0 +1,21 @@
+{
+    "int": "int32",
+    "int16": "int16",
+    "int32": "int32",
+    "int64": "int64",
+    "numpy.int16": "int16",
+    "numpy.int32": "int32",
+    "numpy.int64": "int64",
+    "float": "float64",
+    "float32": "float32",
+    "float64": "float64",
+    "numpy.float32": "float32",
+    "numpy.float64": "float64",
+    "bool": "boolean",
+    "numpy.bool_": "boolean",
+    "str": "string",
+    "object": "string",
+    "numpy.str_": "string",
+    "numpy.object_": "string"
+  }
+  
