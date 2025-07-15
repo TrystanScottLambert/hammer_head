@@ -16,10 +16,13 @@ def scrape_all_mock_data(
     Goes through all the mock hdf5 files in the directory and creates
     a DataFrame of all the values. Essentially one large table.
     """
-    mock_hdf5_list = np.sort(glob.glob(f"{directory}{mock_file_prefix}*.hdf5"))
+    mock_hdf5_list = np.array(glob.glob(f"{directory}{mock_file_prefix}*.hdf5"))
+    mock_hdf5_list_sort_idx = np.argsort([f"{name.split('.')[1]:0>2}"] for name in mock_hdf5_list)
+    mock_hdf5_list = mock_hdf5_list[mock_hdf5_list_sort_idx]
     galaxy_dfs = []
     group_dfs = []
     for file_name in mock_hdf5_list:
+        print(f'Doing {file_name}')
         galaxies = {}
         groups = {}
         with h5py.File(file_name) as file:
@@ -47,6 +50,7 @@ def scrape_all_sed_data(directory: str, sed_file_prefix: str) -> pd.DataFrame:
 
     sed_dfs = []
     for file_name in sed_hdf5_list:
+        print(f'Doing {file_name}')
         df = {}
         with h5py.File(file_name) as file:
             for i, name in enumerate(filters):
@@ -78,4 +82,7 @@ def build_big_tables(
 
 
 if __name__ == "__main__":
-    build_big_tables("./", "shark_hdf5/", "mocksky", "Sting")
+    #build_big_tables("./", "shark_hdf5/", "mocksky", "Sting")
+    IN_DIR = "/scratch/pawsey0119/clagos/Stingray/medi-SURFS/Sharkv2-Lagos23-HBTTrees-bestparams/waves-wide/"
+    OUT_DIR = "/scratch/pawsey0119/tlambert/mock_catalogs/data_central/"
+    build_big_tables(OUT_DIR, IN_DIR,  "mocksky", "Sting-SED")
