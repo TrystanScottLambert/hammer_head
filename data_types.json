@@ -17,5 +17,4 @@
     "object": "string",
     "numpy.str_": "string",
     "numpy.object_": "string"
-  }
-  
+}
