@@ -1,0 +1,210 @@
+coline_flux_int_1:
+  description: Integrated CO(1-0) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_10:
+  description: Integrated CO(10-9) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_2:
+  description: Integrated CO(2-1) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_3:
+  description: Integrated CO(3-2) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_4:
+  description: Integrated CO(4-3) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_5:
+  description: Integrated CO(5-4) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_6:
+  description: Integrated CO(6-5) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_7:
+  description: Integrated CO(7-6) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_8:
+  description: Integrated CO(8-7) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_9:
+  description: Integrated CO(9-8) line flux [W/m^2]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO
+  unit: W/m^2
+coline_flux_int_vel_1:
+  description: Velocity-integrated CO(1-0) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_10:
+  description: Velocity-integrated CO(10-9) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_2:
+  description: Velocity-integrated CO(2-1) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_3:
+  description: Velocity-integrated CO(3-2) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_4:
+  description: Velocity-integrated CO(4-3) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_5:
+  description: Velocity-integrated CO(5-4) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_6:
+  description: Velocity-integrated CO(6-5) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_7:
+  description: Velocity-integrated CO(7-6) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_8:
+  description: Velocity-integrated CO(8-7) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+coline_flux_int_vel_9:
+  description: Velocity-integrated CO(9-8) line flux [Jy km/s]
+  dtype: float32
+  ucd: phot.flux.density;em.line.CO;spect.line.intensity
+  unit: Jy km/s
+h2line_flux_central:
+  description: Normalised central molecular line flux density of inclined galaxy
+  dtype: float32
+  ucd: phot.flux.density;em.line;stat.mean
+  unit: s/km
+h2line_flux_central_eo:
+  description: Normalised central molecular line flux density of edge-on galaxy
+  dtype: float32
+  ucd: phot.flux.density;em.line;stat.mean
+  unit: s/km
+h2line_flux_peak:
+  description: Normalised peak molecular line flux density of inclined galaxy
+  dtype: float32
+  ucd: phot.flux.density;em.line;stat.max
+  unit: s/km
+h2line_flux_peak_eo:
+  description: Normalised peak molecular line flux density of edge-on galaxy
+  dtype: float32
+  ucd: phot.flux.density;em.line;stat.max
+  unit: s/km
+h2line_width_20:
+  description: Molecular line-width at 20% of the peak flux of inclined galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line;stat.percentile;stat.frac
+  unit: km/s
+h2line_width_20_eo:
+  description: Molecular line-width at 20% of the peak flux of edge-on galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line;stat.percentile;stat.frac
+  unit: km/s
+h2line_width_50:
+  description: Molecular line-width at 50% of the peak flux of inclined galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line;stat.percentile;stat.frac
+  unit: km/s
+h2line_width_50_eo:
+  description: Molecular line-width at 50% of the peak flux of edge-on galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line;stat.percentile;stat.frac
+  unit: km/s
+h2line_width_peak:
+  description: Molecular line-width between flux peaks of inclined galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line;stat.max
+  unit: km/s
+h2line_width_peak_eo:
+  description: Molecular line-width between flux peaks of edge-on galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line;stat.max
+  unit: km/s
+hiline_flux_central:
+  description: Normalised central HI line flux density of inclined galaxy
+  dtype: float32
+  ucd: phot.flux.density;em.line.HI;stat.mean
+  unit: s/km
+hiline_flux_central_eo:
+  description: Normalised central HI line flux density of edge-on galaxy
+  dtype: float32
+  ucd: phot.flux.density;em.line.HI;stat.mean
+  unit: s/km
+hiline_flux_int:
+  description: Integrated HI line flux
+  dtype: float32
+  ucd: phot.flux.density;em.line.HI
+  unit: W/m^2
+hiline_flux_int_vel:
+  description: Velocity-integrated HI line flux
+  dtype: float32
+  ucd: phot.flux.density;em.line.HI;spect.line.intensity
+  unit: Jy km/s
+hiline_flux_peak:
+  description: Normalised peak HI line flux density of inclined galaxy
+  dtype: float32
+  ucd: phot.flux.density;em.line.HI;stat.max
+  unit: s/km
+hiline_flux_peak_eo:
+  description: Normalised peak HI line flux density of edge-on galaxy
+  dtype: float32
+  ucd: phot.flux.density;em.line.HI;stat.max
+  unit: s/km
+hiline_width_20:
+  description: HI line-width at 20% of the peak flux of inclined galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line.HI;stat.percentile;stat.frac
+  unit: km/s
+hiline_width_20_eo:
+  description: HI line-width at 20% of the peak flux of edge-on galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line.HI;stat.percentile;stat.frac
+  unit: km/s
+hiline_width_50:
+  description: HI line-width at 50% of the peak flux of inclined galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line.HI;stat.percentile;stat.frac
+  unit: km/s
+hiline_width_50_eo:
+  description: HI line-width at 50% of the peak flux of edge-on galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line.HI;stat.percentile;stat.frac
+  unit: km/s
+hiline_width_peak:
+  description: HI line-width between flux peaks of inclined galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line.HI;stat.max
+  unit: km/s
+hiline_width_peak_eo:
+  description: HI line-width between flux peaks of edge-on galaxy
+  dtype: float32
+  ucd: spect.line.width;em.line.HI;stat.max
+  unit: km/s
