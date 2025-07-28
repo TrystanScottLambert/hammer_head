@@ -1,0 +1,435 @@
+name|description|table_name|ucd|unit|data_type
+cnfw_subhalo|NFW concentration parameter of subhalo|WavesDeepGals|phys.density|None|float32
+coline_flux_int_1|integrated CO(1-0) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_10|integrated CO(10-9) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_2|integrated CO(2-1) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_3|integrated CO(3-2) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_4|integrated CO(4-3) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_5|integrated CO(5-4) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_6|integrated CO(6-5) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_7|integrated CO(7-6) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_8|integrated CO(8-7) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_9|integrated CO(9-8) line flux|WavesDeepGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_vel_1|velocity-integrated CO(1-0) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_10|velocity-integrated CO(10-9) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_2|velocity-integrated CO(2-1) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_3|velocity-integrated CO(3-2) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_4|velocity-integrated CO(4-3) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_5|velocity-integrated CO(5-4) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_6|velocity-integrated CO(6-5) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_7|velocity-integrated CO(7-6) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_8|velocity-integrated CO(8-7) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_9|velocity-integrated CO(9-8) line flux|WavesDeepGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+dc|comoving distance|WavesDeepGals|pos.distance|Mpc/h|float32
+dec|declination|WavesDeepGals|pos.eq.dec;meta.main|deg|float32
+h2line_flux_central|normalised central molecular line flux density of inclined galaxy (multiply by velocity-integrated flux to get Jy)|WavesDeepGals|phot.flux.density;em.line;stat.mean|s/km|float32
+h2line_flux_central_eo|normalised central molecular line flux density of edge-on galaxy (multiply by velocity-integrated flux to get Jy)|WavesDeepGals|phot.flux.density;em.line;stat.mean|s/km|float32
+h2line_flux_peak|normalised peak molecular line flux density of inclined galaxy (multiply by velocity-integrated flux to get Jy)|WavesDeepGals|phot.flux.density;em.line;stat.max|s/km|float32
+h2line_flux_peak_eo|normalised peak molecular line flux density of edge-on galaxy (multiply by velocity-integrated flux to get Jy)|WavesDeepGals|phot.flux.density;em.line;stat.max|s/km|float32
+h2line_width_20|molecular line-width at 20% of the peak flux of inclined galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line|km/s|float32
+h2line_width_20_eo|molecular line-width at 20% of the peak flux of edge-on galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line|km/s|float32
+h2line_width_50|molecular line-width at 50% of the peak flux of inclined galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line;stat.median|km/s|float32
+h2line_width_50_eo|molecular line-width at 50% of the peak flux of edge-on galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line;stat.median|km/s|float32
+h2line_width_peak|molecular line-width between flux peaks of inclined galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line;stat.max|km/s|float32
+h2line_width_peak_eo|molecular line-width between flux peaks of edge-on galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line;stat.max|km/s|float32
+hiline_flux_central|normalised central HI line flux density of inclined galaxy (multiply by hiline_flux_int_vel to get Jy values)|WavesDeepGals|phot.flux.density;em.line.HI;stat.mean|s/km|float32
+hiline_flux_central_eo|normalised central HI line flux density of edge-on galaxy (multiply by hiline_flux_int_vel to get Jy values)|WavesDeepGals|phot.flux.density;em.line.HI;stat.mean|s/km|float32
+hiline_flux_int|integrated HI line flux|WavesDeepGals|phot.flux.density;em.line.HI|W/m^2|float32
+hiline_flux_int_vel|velocity-integrated HI line flux|WavesDeepGals|phot.flux.density;em.line.HI;spect.line.intensity|Jy km/s|float32
+hiline_flux_peak|normalised peak HI line flux density of inclined galaxy (multiply by hiline_flux_int_vel to get Jy values)|WavesDeepGals|phot.flux.density;em.line.HI;stat.max|s/km|float32
+hiline_flux_peak_eo|normalised peak HI line flux density of edge-on galaxy (multiply by hiline_flux_int_vel to get Jy values)|WavesDeepGals|phot.flux.density;em.line.HI;stat.max|s/km|float32
+hiline_width_20|HI line-width at 20% of the peak flux of inclined galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line.HI|km/s|float32
+hiline_width_20_eo|HI line-width at 20% of the peak flux of edge-on galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line.HI|km/s|float32
+hiline_width_50|HI line-width at 50% of the peak flux of inclined galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line.HI;stat.median|km/s|float32
+hiline_width_50_eo|HI line-width at 50% of the peak flux of edge-on galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line.HI;stat.median|km/s|float32
+hiline_width_peak|HI line-width between flux peaks of inclined galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line.HI;stat.max|km/s|float32
+hiline_width_peak_eo|HI line-width between flux peaks of edge-on galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line.HI;stat.max|km/s|float32
+id_galaxy_sam|galaxy ID in SAM|WavesDeepGals|meta.id;src|None|int32
+id_galaxy_sky|unique galaxy ID in mock sky, from 1 to n|WavesDeepGals|meta.id;src|None|int32
+id_galaxy_sky_smart|unique galaxy ID in mock sky, smart format|WavesDeepGals|meta.id;src|None|int64
+id_group_sky|unique group ID if galaxy is in a group, -1 otherwise|WavesDeepGals|meta.id;src|None|int64
+id_halo_sam|host halo ID in SAM|WavesDeepGals|meta.id;src|None|int64
+inclination|inclination = angle between line-of-sight and spin axis|WavesDeepGals|src.orbital.inclination|deg|float32
+jbulge|ecific angular momentum of the bulge|WavesDeepGals|phys.angMomentum|cMpc/h km/s|float32
+jdisk|ecific angular momentum of the di|WavesDeepGals|phys.angMomentum|cMpc/h km/s|float32
+l_x|x-component of total angular moment|WavesDeepGals|phys.angMomentum;pos.cartesian.x|Msun pMpc km/s|float32
+l_y|y-component of total angular moment|WavesDeepGals|phys.angMomentum;pos.cartesian.y|Msun pMpc km/s|float32
+l_z|z-component of total angular moment|WavesDeepGals|phys.angMomentum;pos.cartesian.z|Msun pMpc km/s|float32
+lum_agn_hx|hard x-ray luminosity of the AGN|WavesDeepGals|phys.luminosity;em.X-ray.hard|1e40 erg/s|float32
+mag|apparent magnitude (generic: M/L ratio of 1, no k-correction)|WavesDeepGals|phot.mag|None|float32
+matom_bulge|atomic mass in the bulge|WavesDeepGals|phys.mass|Msun/h|float32
+matom_disk|atomic gas mass in the disk|WavesDeepGals|phys.mass|Msun/h|float32
+mbh|black hole ma|WavesDeepGals|phys.mass|Msun/h|float32
+mbh_acc_hh|black hole accretion rate in the hot halo mode|WavesDeepGals|phys.mass|Msun/h/Gyr|float32
+mbh_acc_sb|black hole accretion rate in the starburst mode|WavesDeepGals|phys.mass|Msun/h/Gyr|float32
+mgas_bulge|gas mass in the bulge|WavesDeepGals|phys.mass|Msun/h|float32
+mgas_disk|gas mass in the disk|WavesDeepGals|phys.mass|Msun/h|float32
+mmol_bulge|molecular gas mass in the bulge|WavesDeepGals|phys.mass|Msun/h|float32
+mmol_disk|molecular gas mass in the disk|WavesDeepGals|phys.mass|Msun/h|float32
+mstars_bulge|stellar mass in the bulge|WavesDeepGals|phys.mass|Msun/h|float32
+mstars_disk|stellar mass in the disk|WavesDeepGals|phys.mass|Msun/h|float32
+mvir_hosthalo|host halo ma|WavesDeepGals|phys.mass;phys.virial|Msun/h|float32
+mvir_subhalo|subhalo ma|WavesDeepGals|phys.mass;phys.virial|Msun/h|float32
+pa|position angle from north to east|WavesDeepGals|pos.posAng|deg|float32
+ra|right ascension|WavesDeepGals|pos.eq.ra;meta.main|deg|float32
+rgas_bulge_apparent|apparent semi-major axis of half-mass ellipse of gas bulg|WavesDeepGals|phys.angSize;phys.size.radius|arcsec|float32
+rgas_bulge_intrinsic|intrinsic half-mass radius of gas bulge|WavesDeepGals|phys.size.radius|cMpc/h|float32
+rgas_disk_apparent|apparent semi-major axis of half-mass ellipse of gas disk|WavesDeepGals|phys.angSize;phys.size.radius|arcsec|float32
+rgas_disk_intrinsic|intrinsic half-mass radius of gas disk|WavesDeepGals|phys.size.radius|cMpc/h|float32
+rstar_bulge_apparent|apparent semi-major axis of half-mass ellipse of stellar bulg|WavesDeepGals|phys.angSize;phys.size.radius|arcsec|float32
+rstar_bulge_intrinsic|intrinsic half-mass radius of stellar bulge|WavesDeepGals|phys.size.radius|cMpc/h|float32
+rstar_disk_apparent|apparent semi-major axis of half-mass ellipse of stellar disk|WavesDeepGals|phys.angSize;phys.size.radius|arcsec|float32
+rstar_disk_intrinsic|intrinsic half-mass radius of stellar disk|WavesDeepGals|phys.size.radius|cMpc/h|float32
+sfr_burst|star formation rate in the bulge|WavesDeepGals|phys.SFR|Msun/h/Gyr|float32
+sfr_disk|star formation rate in the disk|WavesDeepGals|phys.SFR|Msun/h/Gyr|float32
+snapshot|snapshot index|WavesDeepGals|time.epoch;meta.id|None|int32
+subvolume|subvolume index|WavesDeepGals|meta.id;obs.field|None|int32
+tile|tile index in tiling array|WavesDeepGals|meta.id;obs.field|None|int32
+type|galaxy type (0=central, 1=satellite in halo, 2=orphan)|WavesDeepGals|meta.code|None|int32
+vpec_r|line-of-sight peculiar velocity|WavesDeepGals|phys.veloc|proper km/s|float32
+vpec_x|x-component of peculiar velocity|WavesDeepGals|phys.veloc;pos.cartesian.x|proper km/s|float32
+vpec_y|y-component of peculiar velocity|WavesDeepGals|phys.veloc;pos.cartesian.y|proper km/s|float32
+vpec_z|z-component of peculiar velocity|WavesDeepGals|phys.veloc;pos.cartesian.z|proper km/s|float32
+vvir_hosthalo|host halo virial velocity|WavesDeepGals|phys.veloc;phys.virial|km/s|float32
+vvir_subhalo|subhalo virial velocity|WavesDeepGals|phys.veloc;phys.virial|km/s|float32
+zcmb|redshift in CMB frame|WavesDeepGals|src.redshift;pos.cmb|None|float32
+zcos|cosmological redshift without peculiar motions|WavesDeepGals|src.redshift|None|float32
+zgas_bulge|metallicity of the gas in the bulge|WavesDeepGals|phys.abund.Z|None|float32
+zgas_disk|metallicity of the gas in the disk|WavesDeepGals|phys.abund.Z|None|float32
+zobs|redshift in observer-frame|WavesDeepGals|src.redshift|None|float32
+FUV_GALEX_apparent_mag|Apparent magnitude in filter FUV_GALEX (includes dust)|WavesDeepGals|phot.mag|mag|float32
+FUV_GALEX_absolute_mag|Absolute magnitude in filter FUV_GALEX (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+NUV_GALEX_apparent_mag|Apparent magnitude in filter NUV_GALEX (includes dust)|WavesDeepGals|phot.mag|mag|float32
+NUV_GALEX_absolute_mag|Absolute magnitude in filter NUV_GALEX (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+u_SDSS_apparent_mag|Apparent magnitude in filter u_SDSS (includes dust)|WavesDeepGals|phot.mag|mag|float32
+u_SDSS_absolute_mag|Absolute magnitude in filter u_SDSS (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+g_SDSS_apparent_mag|Apparent magnitude in filter g_SDSS (includes dust)|WavesDeepGals|phot.mag|mag|float32
+g_SDSS_absolute_mag|Absolute magnitude in filter g_SDSS (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+r_SDSS_apparent_mag|Apparent magnitude in filter r_SDSS (includes dust)|WavesDeepGals|phot.mag|mag|float32
+r_SDSS_absolute_mag|Absolute magnitude in filter r_SDSS (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+i_SDSS_apparent_mag|Apparent magnitude in filter i_SDSS (includes dust)|WavesDeepGals|phot.mag|mag|float32
+i_SDSS_absolute_mag|Absolute magnitude in filter i_SDSS (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+z_SDSS_apparent_mag|Apparent magnitude in filter z_SDSS (includes dust)|WavesDeepGals|phot.mag|mag|float32
+z_SDSS_absolute_mag|Absolute magnitude in filter z_SDSS (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+u_VST_apparent_mag|Apparent magnitude in filter u_VST (includes dust)|WavesDeepGals|phot.mag|mag|float32
+u_VST_absolute_mag|Absolute magnitude in filter u_VST (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+g_VST_apparent_mag|Apparent magnitude in filter g_VST (includes dust)|WavesDeepGals|phot.mag|mag|float32
+g_VST_absolute_mag|Absolute magnitude in filter g_VST (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+r_VST_apparent_mag|Apparent magnitude in filter r_VST (includes dust)|WavesDeepGals|phot.mag|mag|float32
+r_VST_absolute_mag|Absolute magnitude in filter r_VST (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+i_VST_apparent_mag|Apparent magnitude in filter i_VST (includes dust)|WavesDeepGals|phot.mag|mag|float32
+i_VST_absolute_mag|Absolute magnitude in filter i_VST (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+Z_VISTA_apparent_mag|Apparent magnitude in filter Z_VISTA (includes dust)|WavesDeepGals|phot.mag|mag|float32
+Z_VISTA_absolute_mag|Absolute magnitude in filter Z_VISTA (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+Y_VISTA_apparent_mag|Apparent magnitude in filter Y_VISTA (includes dust)|WavesDeepGals|phot.mag|mag|float32
+Y_VISTA_absolute_mag|Absolute magnitude in filter Y_VISTA (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+J_VISTA_apparent_mag|Apparent magnitude in filter J_VISTA (includes dust)|WavesDeepGals|phot.mag|mag|float32
+J_VISTA_absolute_mag|Absolute magnitude in filter J_VISTA (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+H_VISTA_apparent_mag|Apparent magnitude in filter H_VISTA (includes dust)|WavesDeepGals|phot.mag|mag|float32
+H_VISTA_absolute_mag|Absolute magnitude in filter H_VISTA (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+K_VISTA_apparent_mag|Apparent magnitude in filter K_VISTA (includes dust)|WavesDeepGals|phot.mag|mag|float32
+K_VISTA_absolute_mag|Absolute magnitude in filter K_VISTA (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+W1_WISE_apparent_mag|Apparent magnitude in filter W1_WISE (includes dust)|WavesDeepGals|phot.mag|mag|float32
+W1_WISE_absolute_mag|Absolute magnitude in filter W1_WISE (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+I1_Spitzer_apparent_mag|Apparent magnitude in filter I1_Spitzer (includes dust)|WavesDeepGals|phot.mag|mag|float32
+I1_Spitzer_absolute_mag|Absolute magnitude in filter I1_Spitzer (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+I2_Spitzer_apparent_mag|Apparent magnitude in filter I2_Spitzer (includes dust)|WavesDeepGals|phot.mag|mag|float32
+I2_Spitzer_absolute_mag|Absolute magnitude in filter I2_Spitzer (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+W2_WISE_apparent_mag|Apparent magnitude in filter W2_WISE (includes dust)|WavesDeepGals|phot.mag|mag|float32
+W2_WISE_absolute_mag|Absolute magnitude in filter W2_WISE (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+I3_Spitzer_apparent_mag|Apparent magnitude in filter I3_Spitzer (includes dust)|WavesDeepGals|phot.mag|mag|float32
+I3_Spitzer_absolute_mag|Absolute magnitude in filter I3_Spitzer (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+I4_Spitzer_apparent_mag|Apparent magnitude in filter I4_Spitzer (includes dust)|WavesDeepGals|phot.mag|mag|float32
+I4_Spitzer_absolute_mag|Absolute magnitude in filter I4_Spitzer (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+W3_WISE_apparent_mag|Apparent magnitude in filter W3_WISE (includes dust)|WavesDeepGals|phot.mag|mag|float32
+W3_WISE_absolute_mag|Absolute magnitude in filter W3_WISE (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+W4_WISE_apparent_mag|Apparent magnitude in filter W4_WISE (includes dust)|WavesDeepGals|phot.mag|mag|float32
+W4_WISE_absolute_mag|Absolute magnitude in filter W4_WISE (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+M24_Spitzer_apparent_mag|Apparent magnitude in filter M24_Spitzer (includes dust)|WavesDeepGals|phot.mag|mag|float32
+M24_Spitzer_absolute_mag|Absolute magnitude in filter M24_Spitzer (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+M70_Spitzer_apparent_mag|Apparent magnitude in filter M70_Spitzer (includes dust)|WavesDeepGals|phot.mag|mag|float32
+M70_Spitzer_absolute_mag|Absolute magnitude in filter M70_Spitzer (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+P70_Herschel_apparent_mag|Apparent magnitude in filter P70_Herschel (includes dust)|WavesDeepGals|phot.mag|mag|float32
+P70_Herschel_absolute_mag|Absolute magnitude in filter P70_Herschel (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+P100_Herschel_apparent_mag|Apparent magnitude in filter P100_Herschel (includes dust)|WavesDeepGals|phot.mag|mag|float32
+P100_Herschel_absolute_mag|Absolute magnitude in filter P100_Herschel (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+P160_Herschel_apparent_mag|Apparent magnitude in filter P160_Herschel (includes dust)|WavesDeepGals|phot.mag|mag|float32
+P160_Herschel_absolute_mag|Absolute magnitude in filter P160_Herschel (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+S250_Herschel_apparent_mag|Apparent magnitude in filter S250_Herschel (includes dust)|WavesDeepGals|phot.mag|mag|float32
+S250_Herschel_absolute_mag|Absolute magnitude in filter S250_Herschel (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+S350_Herschel_apparent_mag|Apparent magnitude in filter S350_Herschel (includes dust)|WavesDeepGals|phot.mag|mag|float32
+S350_Herschel_absolute_mag|Absolute magnitude in filter S350_Herschel (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+S450_JCMT_apparent_mag|Apparent magnitude in filter S450_JCMT (includes dust)|WavesDeepGals|phot.mag|mag|float32
+S450_JCMT_absolute_mag|Absolute magnitude in filter S450_JCMT (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+S500_Herschel_apparent_mag|Apparent magnitude in filter S500_Herschel (includes dust)|WavesDeepGals|phot.mag|mag|float32
+S500_Herschel_absolute_mag|Absolute magnitude in filter S500_Herschel (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+S850_JCMT_apparent_mag|Apparent magnitude in filter S850_JCMT (includes dust)|WavesDeepGals|phot.mag|mag|float32
+S850_JCMT_absolute_mag|Absolute magnitude in filter S850_JCMT (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+Band_ionising_photons_apparent_mag|Apparent magnitude in filter Band_ionising_photons (includes dust)|WavesDeepGals|phot.mag|mag|float32
+Band_ionising_photons_absolute_mag|Absolute magnitude in filter Band_ionising_photons (includes dust)|WavesDeepGals|phys.magAbs|mag|float32
+Band9_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 602 GHz - 720 GHz|WavesDeepGals|phot.mag|mag|float32
+Band9_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 602 GHz - 720 GHz|WavesDeepGals|phys.magAbs|mag|float32
+Band8_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 385 GHz - 500 GHz|WavesDeepGals|phot.mag|mag|float32
+Band8_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 385 GHz - 500 GHz|WavesDeepGals|phys.magAbs|mag|float32
+Band7_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 275 GHz - 373 GHz|WavesDeepGals|phot.mag|mag|float32
+Band7_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 275 GHz - 373 GHz|WavesDeepGals|phys.magAbs|mag|float32
+Band6_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 211 GHz - 275 GHz|WavesDeepGals|phot.mag|mag|float32
+Band6_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 211 GHz - 275 GHz|WavesDeepGals|phys.magAbs|mag|float32
+Band5_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 163 GHz - 211 GHz|WavesDeepGals|phot.mag|mag|float32
+Band5_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 163 GHz - 211 GHz|WavesDeepGals|phys.magAbs|mag|float32
+Band4_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 125 GHz - 163 GHz|WavesDeepGals|phot.mag|mag|float32
+Band4_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 125 GHz - 163 GHz|WavesDeepGals|phys.magAbs|mag|float32
+Band3_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 84 GHz - 116 GHz|WavesDeepGals|phot.mag|mag|float32
+Band3_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 84 GHz - 116 GHz|WavesDeepGals|phys.magAbs|mag|float32
+BandX_VLA_apparent_mag|Apparent magnitude in the top-hat filter over the range 24.98 mm - 37.47 mm|WavesDeepGals|phot.mag|mag|float32
+BandX_VLA_absolute_mag|Absolute magnitude in the top-hat filter over the range 24.98 mm - 37.47 mm|WavesDeepGals|phys.magAbs|mag|float32
+BandC_VLA_apparent_mag|Apparent magnitude in the top-hat filter over the range 37.47 mm - 74.95 mm|WavesDeepGals|phot.mag|mag|float32
+BandC_VLA_absolute_mag|Absolute magnitude in the top-hat filter over the range 37.47 mm - 74.95 mm|WavesDeepGals|phys.magAbs|mag|float32
+BandS_VLA_apparent_mag|Apparent magnitude in the top-hat filter over the range 74.95 mm - 149.9 mm|WavesDeepGals|phot.mag|mag|float32
+BandS_VLA_absolute_mag|Absolute magnitude in the top-hat filter over the range 74.95 mm - 149.9 mm|WavesDeepGals|phys.magAbs|mag|float32
+BandL_VLA_apparent_mag|Apparent magnitude in the top-hat filter over the range 149.9 mm - 299.79 mm|WavesDeepGals|phot.mag|mag|float32
+BandL_VLA_absolute_mag|Absolute magnitude in the top-hat filter over the range 149.9 mm - 299.79 mm|WavesDeepGals|phys.magAbs|mag|float32
+Band_610MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range 454.23 mm - 535.34 mm|WavesDeepGals|phot.mag|mag|float32
+Band_610MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 454.23 mm - 535.34 mm|WavesDeepGals|phys.magAbs|mag|float32
+Band_325MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range 799.45 mm - 1090.15 mm|WavesDeepGals|phot.mag|mag|float32
+Band_325MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 799.45 mm - 1090.15 mm|WavesDeepGals|phys.magAbs|mag|float32
+Band_150MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range 1498.96 mm - 2997.92 mm|WavesDeepGals|phot.mag|mag|float32
+Band_150MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 1498.96 mm - 2997.92 mm|WavesDeepGals|phys.magAbs|mag|float32
+dc|comoving distance|WavesDeepGalGroups|pos.distance|Mpc/h|float32
+dec|declination|WavesDeepGalGroups|pos.eq.dec;meta.main|deg|float32
+flag|group flag: 0 if group complete, >0 if truncated by survey edge (+1), snapshot limit (+2), tile edge (+4), shell edge (+8)|WavesDeepGalGroups|meta.code.qual|None|int32
+id_group_sky|unique parent halo ID in mock sky|WavesDeepGalGroups|meta.id;src|None|int64
+id_halo_sam|parent halo ID in SAM|WavesDeepGalGroups|meta.id;src|None|int64
+mvir|virial ma|WavesDeepGalGroups|phys.mass;phys.virial|Msun/h|float32
+n_galaxies_selected|number of galaxies that live in the same group (host halo) and are present in the mock sky|WavesDeepGalGroups|meta.number|None|int32
+n_galaxies_total|total number of galaxies that live in the same group (host halo)|WavesDeepGalGroups|meta.number|None|int32
+ra|right ascension|WavesDeepGalGroups|pos.eq.ra;meta.main|deg|float32
+sigma_3d_all|3D peculiar velocity dispersion of ALL group members, including non-detection|WavesDeepGalGroups|phys.veloc.dispersion|proper km/s|float32
+sigma_los_detected|line-of-sight peculiar velocity dispersion of detected group memb|WavesDeepGalGroups|phys.veloc.dispersion|proper km/s|float32
+snapshot|snapshot index|WavesDeepGalGroups|meta.dataset|None|int32
+subvolume|subvolume index|WavesDeepGalGroups|meta.dataset|None|int32
+tile|tile index in tiling array|WavesDeepGalGroups|meta.dataset|None|int32
+vpec_r|line-of-sight peculiar velocity|WavesDeepGalGroups|phys.veloc|proper km/s|float32
+vpec_x|x-component of peculiar velocity|WavesDeepGalGroups|phys.veloc;pos.cartesian.x|proper km/s|float32
+vpec_y|y-component of peculiar velocity|WavesDeepGalGroups|phys.veloc;pos.cartesian.y|proper km/s|float32
+vpec_z|z-component of peculiar velocity|WavesDeepGalGroups|phys.veloc;pos.cartesian.z|proper km/s|float32
+zcmb|redshift in CMB frame|WavesDeepGalGroups|src.redshift;pos.cmb|None|float32
+zcos|cosmological redshift without peculiar motions|WavesDeepGalGroups|src.redshift|None|float32
+zobs|redshift in observer-frame|WavesDeepGalGroups|src.redshift|None|float32
+cnfw_subhalo|NFW concentration parameter of subhalo|WavesWideGals|phys.density|None|float32
+coline_flux_int_1|integrated CO(1-0) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_10|integrated CO(10-9) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_2|integrated CO(2-1) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_3|integrated CO(3-2) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_4|integrated CO(4-3) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_5|integrated CO(5-4) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_6|integrated CO(6-5) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_7|integrated CO(7-6) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_8|integrated CO(8-7) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_9|integrated CO(9-8) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
+coline_flux_int_vel_1|velocity-integrated CO(1-0) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_10|velocity-integrated CO(10-9) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_2|velocity-integrated CO(2-1) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_3|velocity-integrated CO(3-2) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_4|velocity-integrated CO(4-3) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_5|velocity-integrated CO(5-4) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_6|velocity-integrated CO(6-5) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_7|velocity-integrated CO(7-6) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_8|velocity-integrated CO(8-7) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+coline_flux_int_vel_9|velocity-integrated CO(9-8) line flux|WavesWideGals|phot.flux.density;em.line.CO;spect.line.intensity|Jy km/s|float32
+dc|comoving distance|WavesWideGals|pos.distance|Mpc/h|float32
+dec|declination|WavesWideGals|pos.eq.dec;meta.main|deg|float32
+h2line_flux_central|normalised central molecular line flux density of inclined galaxy (multiply by velocity-integrated flux to get Jy)|WavesWideGals|phot.flux.density;em.line;stat.mean|s/km|float32
+h2line_flux_central_eo|normalised central molecular line flux density of edge-on galaxy (multiply by velocity-integrated flux to get Jy)|WavesWideGals|phot.flux.density;em.line;stat.mean|s/km|float32
+h2line_flux_peak|normalised peak molecular line flux density of inclined galaxy (multiply by velocity-integrated flux to get Jy)|WavesWideGals|phot.flux.density;em.line;stat.max|s/km|float32
+h2line_flux_peak_eo|normalised peak molecular line flux density of edge-on galaxy (multiply by velocity-integrated flux to get Jy)|WavesWideGals|phot.flux.density;em.line;stat.max|s/km|float32
+h2line_width_20|molecular line-width at 20% of the peak flux of inclined galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line|km/s|float32
+h2line_width_20_eo|molecular line-width at 20% of the peak flux of edge-on galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line|km/s|float32
+h2line_width_50|molecular line-width at 50% of the peak flux of inclined galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line;stat.median|km/s|float32
+h2line_width_50_eo|molecular line-width at 50% of the peak flux of edge-on galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line;stat.median|km/s|float32
+h2line_width_peak|molecular line-width between flux peaks of inclined galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line;stat.max|km/s|float32
+h2line_width_peak_eo|molecular line-width between flux peaks of edge-on galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line;stat.max|km/s|float32
+hiline_flux_central|normalised central HI line flux density of inclined galaxy (multiply by hiline_flux_int_vel to get Jy values)|WavesWideGals|phot.flux.density;em.line.HI;stat.mean|s/km|float32
+hiline_flux_central_eo|normalised central HI line flux density of edge-on galaxy (multiply by hiline_flux_int_vel to get Jy values)|WavesWideGals|phot.flux.density;em.line.HI;stat.mean|s/km|float32
+hiline_flux_int|integrated HI line flux|WavesWideGals|phot.flux.density;em.line.HI|W/m^2|float32
+hiline_flux_int_vel|velocity-integrated HI line flux|WavesWideGals|phot.flux.density;em.line.HI;spect.line.intensity|Jy km/s|float32
+hiline_flux_peak|normalised peak HI line flux density of inclined galaxy (multiply by hiline_flux_int_vel to get Jy values)|WavesWideGals|phot.flux.density;em.line.HI;stat.max|s/km|float32
+hiline_flux_peak_eo|normalised peak HI line flux density of edge-on galaxy (multiply by hiline_flux_int_vel to get Jy values)|WavesWideGals|phot.flux.density;em.line.HI;stat.max|s/km|float32
+hiline_width_20|HI line-width at 20% of the peak flux of inclined galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line.HI|km/s|float32
+hiline_width_20_eo|HI line-width at 20% of the peak flux of edge-on galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line.HI|km/s|float32
+hiline_width_50|HI line-width at 50% of the peak flux of inclined galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line.HI;stat.median|km/s|float32
+hiline_width_50_eo|HI line-width at 50% of the peak flux of edge-on galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line.HI;stat.median|km/s|float32
+hiline_width_peak|HI line-width between flux peaks of inclined galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line.HI;stat.max|km/s|float32
+hiline_width_peak_eo|HI line-width between flux peaks of edge-on galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line.HI;stat.max|km/s|float32
+id_galaxy_sam|galaxy ID in SAM|WavesWideGals|meta.id;src|None|int32
+id_galaxy_sky|unique galaxy ID in mock sky, from 1 to n|WavesWideGals|meta.id;src|None|int32
+id_galaxy_sky_smart|unique galaxy ID in mock sky, smart format|WavesWideGals|meta.id;src|None|int64
+id_group_sky|unique group ID if galaxy is in a group, -1 otherwise|WavesWideGals|meta.id;src|None|int64
+id_halo_sam|host halo ID in SAM|WavesWideGals|meta.id;src|None|int64
+inclination|inclination = angle between line-of-sight and spin axis|WavesWideGals|src.orbital.inclination|deg|float32
+jbulge|ecific angular momentum of the bulge|WavesWideGals|phys.angMomentum|cMpc/h km/s|float32
+jdisk|ecific angular momentum of the di|WavesWideGals|phys.angMomentum|cMpc/h km/s|float32
+l_x|x-component of total angular moment|WavesWideGals|phys.angMomentum;pos.cartesian.x|Msun pMpc km/s|float32
+l_y|y-component of total angular moment|WavesWideGals|phys.angMomentum;pos.cartesian.y|Msun pMpc km/s|float32
+l_z|z-component of total angular moment|WavesWideGals|phys.angMomentum;pos.cartesian.z|Msun pMpc km/s|float32
+lum_agn_hx|hard x-ray luminosity of the AGN|WavesWideGals|phys.luminosity;em.X-ray.hard|1e40 erg/s|float32
+mag|apparent magnitude (generic: M/L ratio of 1, no k-correction)|WavesWideGals|phot.mag|None|float32
+matom_bulge|atomic mass in the bulge|WavesWideGals|phys.mass|Msun/h|float32
+matom_disk|atomic gas mass in the disk|WavesWideGals|phys.mass|Msun/h|float32
+mbh|black hole ma|WavesWideGals|phys.mass|Msun/h|float32
+mbh_acc_hh|black hole accretion rate in the hot halo mode|WavesWideGals|phys.mass|Msun/h/Gyr|float32
+mbh_acc_sb|black hole accretion rate in the starburst mode|WavesWideGals|phys.mass|Msun/h/Gyr|float32
+mgas_bulge|gas mass in the bulge|WavesWideGals|phys.mass|Msun/h|float32
+mgas_disk|gas mass in the disk|WavesWideGals|phys.mass|Msun/h|float32
+mmol_bulge|molecular gas mass in the bulge|WavesWideGals|phys.mass|Msun/h|float32
+mmol_disk|molecular gas mass in the disk|WavesWideGals|phys.mass|Msun/h|float32
+mstars_bulge|stellar mass in the bulge|WavesWideGals|phys.mass|Msun/h|float32
+mstars_disk|stellar mass in the disk|WavesWideGals|phys.mass|Msun/h|float32
+mvir_hosthalo|host halo ma|WavesWideGals|phys.mass;phys.virial|Msun/h|float32
+mvir_subhalo|subhalo ma|WavesWideGals|phys.mass;phys.virial|Msun/h|float32
+pa|position angle from north to east|WavesWideGals|pos.posAng|deg|float32
+ra|right ascension|WavesWideGals|pos.eq.ra;meta.main|deg|float32
+rgas_bulge_apparent|apparent semi-major axis of half-mass ellipse of gas bulg|WavesWideGals|phys.angSize;phys.size.radius|arcsec|float32
+rgas_bulge_intrinsic|intrinsic half-mass radius of gas bulge|WavesWideGals|phys.size.radius|cMpc/h|float32
+rgas_disk_apparent|apparent semi-major axis of half-mass ellipse of gas disk|WavesWideGals|phys.angSize;phys.size.radius|arcsec|float32
+rgas_disk_intrinsic|intrinsic half-mass radius of gas disk|WavesWideGals|phys.size.radius|cMpc/h|float32
+rstar_bulge_apparent|apparent semi-major axis of half-mass ellipse of stellar bulg|WavesWideGals|phys.angSize;phys.size.radius|arcsec|float32
+rstar_bulge_intrinsic|intrinsic half-mass radius of stellar bulge|WavesWideGals|phys.size.radius|cMpc/h|float32
+rstar_disk_apparent|apparent semi-major axis of half-mass ellipse of stellar disk|WavesWideGals|phys.angSize;phys.size.radius|arcsec|float32
+rstar_disk_intrinsic|intrinsic half-mass radius of stellar disk|WavesWideGals|phys.size.radius|cMpc/h|float32
+sfr_burst|star formation rate in the bulge|WavesWideGals|phys.SFR|Msun/h/Gyr|float32
+sfr_disk|star formation rate in the disk|WavesWideGals|phys.SFR|Msun/h/Gyr|float32
+snapshot|snapshot index|WavesWideGals|time.epoch;meta.id|None|int32
+subvolume|subvolume index|WavesWideGals|meta.id;obs.field|None|int32
+tile|tile index in tiling array|WavesWideGals|meta.id;obs.field|None|int32
+type|galaxy type (0=central, 1=satellite in halo, 2=orphan)|WavesWideGals|meta.code|None|int32
+vpec_r|line-of-sight peculiar velocity|WavesWideGals|phys.veloc|proper km/s|float32
+vpec_x|x-component of peculiar velocity|WavesWideGals|phys.veloc;pos.cartesian.x|proper km/s|float32
+vpec_y|y-component of peculiar velocity|WavesWideGals|phys.veloc;pos.cartesian.y|proper km/s|float32
+vpec_z|z-component of peculiar velocity|WavesWideGals|phys.veloc;pos.cartesian.z|proper km/s|float32
+vvir_hosthalo|host halo virial velocity|WavesWideGals|phys.veloc;phys.virial|km/s|float32
+vvir_subhalo|subhalo virial velocity|WavesWideGals|phys.veloc;phys.virial|km/s|float32
+zcmb|redshift in CMB frame|WavesWideGals|src.redshift;pos.cmb|None|float32
+zcos|cosmological redshift without peculiar motions|WavesWideGals|src.redshift|None|float32
+zgas_bulge|metallicity of the gas in the bulge|WavesWideGals|phys.abund.Z|None|float32
+zgas_disk|metallicity of the gas in the disk|WavesWideGals|phys.abund.Z|None|float32
+zobs|redshift in observer-frame|WavesWideGals|src.redshift|None|float32
+FUV_GALEX_apparent_mag|Apparent magnitude in filter FUV_GALEX (includes dust)|WavesWideGals|phot.mag|mag|float32
+FUV_GALEX_absolute_mag|Absolute magnitude in filter FUV_GALEX (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+NUV_GALEX_apparent_mag|Apparent magnitude in filter NUV_GALEX (includes dust)|WavesWideGals|phot.mag|mag|float32
+NUV_GALEX_absolute_mag|Absolute magnitude in filter NUV_GALEX (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+u_SDSS_apparent_mag|Apparent magnitude in filter u_SDSS (includes dust)|WavesWideGals|phot.mag|mag|float32
+u_SDSS_absolute_mag|Absolute magnitude in filter u_SDSS (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+g_SDSS_apparent_mag|Apparent magnitude in filter g_SDSS (includes dust)|WavesWideGals|phot.mag|mag|float32
+g_SDSS_absolute_mag|Absolute magnitude in filter g_SDSS (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+r_SDSS_apparent_mag|Apparent magnitude in filter r_SDSS (includes dust)|WavesWideGals|phot.mag|mag|float32
+r_SDSS_absolute_mag|Absolute magnitude in filter r_SDSS (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+i_SDSS_apparent_mag|Apparent magnitude in filter i_SDSS (includes dust)|WavesWideGals|phot.mag|mag|float32
+i_SDSS_absolute_mag|Absolute magnitude in filter i_SDSS (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+z_SDSS_apparent_mag|Apparent magnitude in filter z_SDSS (includes dust)|WavesWideGals|phot.mag|mag|float32
+z_SDSS_absolute_mag|Absolute magnitude in filter z_SDSS (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+u_VST_apparent_mag|Apparent magnitude in filter u_VST (includes dust)|WavesWideGals|phot.mag|mag|float32
+u_VST_absolute_mag|Absolute magnitude in filter u_VST (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+g_VST_apparent_mag|Apparent magnitude in filter g_VST (includes dust)|WavesWideGals|phot.mag|mag|float32
+g_VST_absolute_mag|Absolute magnitude in filter g_VST (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+r_VST_apparent_mag|Apparent magnitude in filter r_VST (includes dust)|WavesWideGals|phot.mag|mag|float32
+r_VST_absolute_mag|Absolute magnitude in filter r_VST (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+i_VST_apparent_mag|Apparent magnitude in filter i_VST (includes dust)|WavesWideGals|phot.mag|mag|float32
+i_VST_absolute_mag|Absolute magnitude in filter i_VST (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+Z_VISTA_apparent_mag|Apparent magnitude in filter Z_VISTA (includes dust)|WavesWideGals|phot.mag|mag|float32
+Z_VISTA_absolute_mag|Absolute magnitude in filter Z_VISTA (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+Y_VISTA_apparent_mag|Apparent magnitude in filter Y_VISTA (includes dust)|WavesWideGals|phot.mag|mag|float32
+Y_VISTA_absolute_mag|Absolute magnitude in filter Y_VISTA (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+J_VISTA_apparent_mag|Apparent magnitude in filter J_VISTA (includes dust)|WavesWideGals|phot.mag|mag|float32
+J_VISTA_absolute_mag|Absolute magnitude in filter J_VISTA (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+H_VISTA_apparent_mag|Apparent magnitude in filter H_VISTA (includes dust)|WavesWideGals|phot.mag|mag|float32
+H_VISTA_absolute_mag|Absolute magnitude in filter H_VISTA (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+K_VISTA_apparent_mag|Apparent magnitude in filter K_VISTA (includes dust)|WavesWideGals|phot.mag|mag|float32
+K_VISTA_absolute_mag|Absolute magnitude in filter K_VISTA (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+W1_WISE_apparent_mag|Apparent magnitude in filter W1_WISE (includes dust)|WavesWideGals|phot.mag|mag|float32
+W1_WISE_absolute_mag|Absolute magnitude in filter W1_WISE (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+I1_Spitzer_apparent_mag|Apparent magnitude in filter I1_Spitzer (includes dust)|WavesWideGals|phot.mag|mag|float32
+I1_Spitzer_absolute_mag|Absolute magnitude in filter I1_Spitzer (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+I2_Spitzer_apparent_mag|Apparent magnitude in filter I2_Spitzer (includes dust)|WavesWideGals|phot.mag|mag|float32
+I2_Spitzer_absolute_mag|Absolute magnitude in filter I2_Spitzer (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+W2_WISE_apparent_mag|Apparent magnitude in filter W2_WISE (includes dust)|WavesWideGals|phot.mag|mag|float32
+W2_WISE_absolute_mag|Absolute magnitude in filter W2_WISE (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+I3_Spitzer_apparent_mag|Apparent magnitude in filter I3_Spitzer (includes dust)|WavesWideGals|phot.mag|mag|float32
+I3_Spitzer_absolute_mag|Absolute magnitude in filter I3_Spitzer (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+I4_Spitzer_apparent_mag|Apparent magnitude in filter I4_Spitzer (includes dust)|WavesWideGals|phot.mag|mag|float32
+I4_Spitzer_absolute_mag|Absolute magnitude in filter I4_Spitzer (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+W3_WISE_apparent_mag|Apparent magnitude in filter W3_WISE (includes dust)|WavesWideGals|phot.mag|mag|float32
+W3_WISE_absolute_mag|Absolute magnitude in filter W3_WISE (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+W4_WISE_apparent_mag|Apparent magnitude in filter W4_WISE (includes dust)|WavesWideGals|phot.mag|mag|float32
+W4_WISE_absolute_mag|Absolute magnitude in filter W4_WISE (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+M24_Spitzer_apparent_mag|Apparent magnitude in filter M24_Spitzer (includes dust)|WavesWideGals|phot.mag|mag|float32
+M24_Spitzer_absolute_mag|Absolute magnitude in filter M24_Spitzer (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+M70_Spitzer_apparent_mag|Apparent magnitude in filter M70_Spitzer (includes dust)|WavesWideGals|phot.mag|mag|float32
+M70_Spitzer_absolute_mag|Absolute magnitude in filter M70_Spitzer (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+P70_Herschel_apparent_mag|Apparent magnitude in filter P70_Herschel (includes dust)|WavesWideGals|phot.mag|mag|float32
+P70_Herschel_absolute_mag|Absolute magnitude in filter P70_Herschel (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+P100_Herschel_apparent_mag|Apparent magnitude in filter P100_Herschel (includes dust)|WavesWideGals|phot.mag|mag|float32
+P100_Herschel_absolute_mag|Absolute magnitude in filter P100_Herschel (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+P160_Herschel_apparent_mag|Apparent magnitude in filter P160_Herschel (includes dust)|WavesWideGals|phot.mag|mag|float32
+P160_Herschel_absolute_mag|Absolute magnitude in filter P160_Herschel (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+S250_Herschel_apparent_mag|Apparent magnitude in filter S250_Herschel (includes dust)|WavesWideGals|phot.mag|mag|float32
+S250_Herschel_absolute_mag|Absolute magnitude in filter S250_Herschel (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+S350_Herschel_apparent_mag|Apparent magnitude in filter S350_Herschel (includes dust)|WavesWideGals|phot.mag|mag|float32
+S350_Herschel_absolute_mag|Absolute magnitude in filter S350_Herschel (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+S450_JCMT_apparent_mag|Apparent magnitude in filter S450_JCMT (includes dust)|WavesWideGals|phot.mag|mag|float32
+S450_JCMT_absolute_mag|Absolute magnitude in filter S450_JCMT (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+S500_Herschel_apparent_mag|Apparent magnitude in filter S500_Herschel (includes dust)|WavesWideGals|phot.mag|mag|float32
+S500_Herschel_absolute_mag|Absolute magnitude in filter S500_Herschel (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+S850_JCMT_apparent_mag|Apparent magnitude in filter S850_JCMT (includes dust)|WavesWideGals|phot.mag|mag|float32
+S850_JCMT_absolute_mag|Absolute magnitude in filter S850_JCMT (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+Band_ionising_photons_apparent_mag|Apparent magnitude in filter Band_ionising_photons (includes dust)|WavesWideGals|phot.mag|mag|float32
+Band_ionising_photons_absolute_mag|Absolute magnitude in filter Band_ionising_photons (includes dust)|WavesWideGals|phys.magAbs|mag|float32
+Band9_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 602 GHz - 720 GHz|WavesWideGals|phot.mag|mag|float32
+Band9_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 602 GHz - 720 GHz|WavesWideGals|phys.magAbs|mag|float32
+Band8_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 385 GHz - 500 GHz|WavesWideGals|phot.mag|mag|float32
+Band8_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 385 GHz - 500 GHz|WavesWideGals|phys.magAbs|mag|float32
+Band7_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 275 GHz - 373 GHz|WavesWideGals|phot.mag|mag|float32
+Band7_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 275 GHz - 373 GHz|WavesWideGals|phys.magAbs|mag|float32
+Band6_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 211 GHz - 275 GHz|WavesWideGals|phot.mag|mag|float32
+Band6_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 211 GHz - 275 GHz|WavesWideGals|phys.magAbs|mag|float32
+Band5_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 163 GHz - 211 GHz|WavesWideGals|phot.mag|mag|float32
+Band5_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 163 GHz - 211 GHz|WavesWideGals|phys.magAbs|mag|float32
+Band4_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 125 GHz - 163 GHz|WavesWideGals|phot.mag|mag|float32
+Band4_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 125 GHz - 163 GHz|WavesWideGals|phys.magAbs|mag|float32
+Band3_ALMA_apparent_mag|Apparent magnitude in the top-hat filter over the range 84 GHz - 116 GHz|WavesWideGals|phot.mag|mag|float32
+Band3_ALMA_absolute_mag|Absolute magnitude in the top-hat filter over the range 84 GHz - 116 GHz|WavesWideGals|phys.magAbs|mag|float32
+BandX_VLA_apparent_mag|Apparent magnitude in the top-hat filter over the range 24.98 mm - 37.47 mm|WavesWideGals|phot.mag|mag|float32
+BandX_VLA_absolute_mag|Absolute magnitude in the top-hat filter over the range 24.98 mm - 37.47 mm|WavesWideGals|phys.magAbs|mag|float32
+BandC_VLA_apparent_mag|Apparent magnitude in the top-hat filter over the range 37.47 mm - 74.95 mm|WavesWideGals|phot.mag|mag|float32
+BandC_VLA_absolute_mag|Absolute magnitude in the top-hat filter over the range 37.47 mm - 74.95 mm|WavesWideGals|phys.magAbs|mag|float32
+BandS_VLA_apparent_mag|Apparent magnitude in the top-hat filter over the range 74.95 mm - 149.9 mm|WavesWideGals|phot.mag|mag|float32
+BandS_VLA_absolute_mag|Absolute magnitude in the top-hat filter over the range 74.95 mm - 149.9 mm|WavesWideGals|phys.magAbs|mag|float32
+BandL_VLA_apparent_mag|Apparent magnitude in the top-hat filter over the range 149.9 mm - 299.79 mm|WavesWideGals|phot.mag|mag|float32
+BandL_VLA_absolute_mag|Absolute magnitude in the top-hat filter over the range 149.9 mm - 299.79 mm|WavesWideGals|phys.magAbs|mag|float32
+Band_610MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range 454.23 mm - 535.34 mm|WavesWideGals|phot.mag|mag|float32
+Band_610MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 454.23 mm - 535.34 mm|WavesWideGals|phys.magAbs|mag|float32
+Band_325MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range 799.45 mm - 1090.15 mm|WavesWideGals|phot.mag|mag|float32
+Band_325MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 799.45 mm - 1090.15 mm|WavesWideGals|phys.magAbs|mag|float32
+Band_150MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range 1498.96 mm - 2997.92 mm|WavesWideGals|phot.mag|mag|float32
+Band_150MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 1498.96 mm - 2997.92 mm|WavesWideGals|phys.magAbs|mag|float32
+dc|comoving distance|WavesWideGalGroups|pos.distance|Mpc/h|float32
+dec|declination|WavesWideGalGroups|pos.eq.dec;meta.main|deg|float32
+flag|group flag: 0 if group complete, >0 if truncated by survey edge (+1), snapshot limit (+2), tile edge (+4), shell edge (+8)|WavesWideGalGroups|meta.code.qual|None|int32
+id_group_sky|unique parent halo ID in mock sky|WavesWideGalGroups|meta.id;src|None|int64
+id_halo_sam|parent halo ID in SAM|WavesWideGalGroups|meta.id;src|None|int64
+mvir|virial ma|WavesWideGalGroups|phys.mass;phys.virial|Msun/h|float32
+n_galaxies_selected|number of galaxies that live in the same group (host halo) and are present in the mock sky|WavesWideGalGroups|meta.number|None|int32
+n_galaxies_total|total number of galaxies that live in the same group (host halo)|WavesWideGalGroups|meta.number|None|int32
+ra|right ascension|WavesWideGalGroups|pos.eq.ra;meta.main|deg|float32
+sigma_3d_all|3D peculiar velocity dispersion of ALL group members, including non-detection|WavesWideGalGroups|phys.veloc.dispersion|proper km/s|float32
+sigma_los_detected|line-of-sight peculiar velocity dispersion of detected group memb|WavesWideGalGroups|phys.veloc.dispersion|proper km/s|float32
+snapshot|snapshot index|WavesWideGalGroups|meta.dataset|None|int32
+subvolume|subvolume index|WavesWideGalGroups|meta.dataset|None|int32
+tile|tile index in tiling array|WavesWideGalGroups|meta.dataset|None|int32
+vpec_r|line-of-sight peculiar velocity|WavesWideGalGroups|phys.veloc|proper km/s|float32
+vpec_x|x-component of peculiar velocity|WavesWideGalGroups|phys.veloc;pos.cartesian.x|proper km/s|float32
+vpec_y|y-component of peculiar velocity|WavesWideGalGroups|phys.veloc;pos.cartesian.y|proper km/s|float32
+vpec_z|z-component of peculiar velocity|WavesWideGalGroups|phys.veloc;pos.cartesian.z|proper km/s|float32
+zcmb|redshift in CMB frame|WavesWideGalGroups|src.redshift;pos.cmb|None|float32
+zcos|cosmological redshift without peculiar motions|WavesWideGalGroups|src.redshift|None|float32
+zobs|redshift in observer-frame|WavesWideGalGroups|src.redshift|None|float32

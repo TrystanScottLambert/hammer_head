@@ -231,7 +231,7 @@ if __name__ == "__main__":
     table_sed_ww = create_metadata_table_from_sed(wide_gals_name, INFILE_SED)
 
     meta = [table_wdg, table_sed_wd, table_wdgg, table_wwg, table_sed_ww, table_wwgg]
-    write_meta_data("waves_shark_fdr_column_meta.txt", meta)
+    write_meta_data("waves_shark_column_meta.txt", meta)
 
     # Table and Group meta data.
     table_deep_galaxies = Table(deep_gals_name, f"{deep_gals_name}.csv", "This catalogue contains galaxies in the WAVES-deep mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=2")
@@ -241,7 +241,7 @@ if __name__ == "__main__":
 
     with open("preamble.txt", encoding='utf8') as pre_file:
         preamble = pre_file.readlines()
-    wide_group = Group("waves-wide", "WAVES Wide", [table_wide_galaxies, table_wide_groups], f"Shark mock lightcones in the geometry of WAVES-wide. {preamble}")
-    deep_group = Group("waves-deep", "WAVES Deep", [table_deep_galaxies, table_deep_groups], f"Shark mock lightcones in the geometry of WAVES-deep. {preamble}")
+    wide_group = Group("waves-wide", "WAVES Wide", [table_wide_galaxies, table_wide_groups], f"Shark mock lightcones in the geometry of WAVES-wide. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).")
+    deep_group = Group("waves-deep", "WAVES Deep", [table_deep_galaxies, table_deep_groups], f"Shark mock lightcones in the geometry of WAVES-deep. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).")
 
-    write_directory_meta_data([deep_group, wide_group], "waves_shark_fdr", "v0.3.1")
+    write_directory_meta_data([deep_group, wide_group], "waves_shark", "v0.3.1")
