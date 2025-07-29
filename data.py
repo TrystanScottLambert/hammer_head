@@ -10,7 +10,7 @@ import numpy as np
 
 
 def scrape_all_mock_data(
-    directory: str, mock_file_prefix: str
+    directory: str, mock_file_prefix: str       
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
     Goes through all the mock hdf5 files in the directory and creates
@@ -22,7 +22,6 @@ def scrape_all_mock_data(
     galaxy_dfs = []
     group_dfs = []
     for file_name in mock_hdf5_list:
-        print(f'Doing {file_name}')
         galaxies = {}
         groups = {}
         with h5py.File(file_name) as file:
@@ -71,6 +70,7 @@ def build_big_tables(
 
     print("Scraping SED data:")
     sed_df = scrape_all_sed_data(directory, sed_prefix)
+    assert(len(sed_df) == len(gal_df))
 
     final_gal = pd.concat([gal_df, sed_df], axis=1)
 
@@ -85,4 +85,4 @@ if __name__ == "__main__":
     #build_big_tables("./", "shark_hdf5/", "mocksky", "Sting")
     IN_DIR = "/scratch/pawsey0119/clagos/Stingray/medi-SURFS/Sharkv2-Lagos23-HBTTrees-bestparams/waves-wide/"
     OUT_DIR = "/scratch/pawsey0119/tlambert/mock_catalogs/data_central/"
-    build_big_tables(OUT_DIR, IN_DIR,  "mocksky", "Sting-SED")
+    build_big_tables(OUT_DIR, IN_DIR,  "mocksky", "Sting-SED-eagle-rr14_")

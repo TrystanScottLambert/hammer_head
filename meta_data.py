@@ -95,13 +95,12 @@ def write_directory_meta_data(groups: list[Group], outfile_prefix: str, version:
         file.write('name|pretty_name|description|documentation|contact|date|version\n')
         for group in groups:
             file.write(f"{group.name}|{group.pretty_name}|{group.description}|{group.documentation}|{group.contact}|{group.group_date}|{version}\n")
-        
+
     with open(table_file_name, 'w', encoding='utf8') as file:
         file.write('name|description|documentation|group_name|filename|contact|date|version\n')
         for group in groups:
             for table in group.tables:
                 file.write(f"{table.name}|{table.description}|{table.documentation}|{group.name}|{table.file_name}|{group.contact}|{table.table_date}|{version}\n")
-
 
 
 class FileType(Enum):
