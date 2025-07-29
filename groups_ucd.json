@@ -14,7 +14,7 @@
     "vpec_r": "phys.veloc",
     "sigma_3d_all": "phys.veloc.dispersion",
     "sigma_los_detected": "phys.veloc.dispersion",
-    "id_group_sky": "meta.id;src",
+    "id_group_sky": "meta.id;meta.main",
     "id_halo_sam": "meta.id;src",
     "mvir": "phys.mass;phys.virial",
     "n_galaxies_total": "meta.number",

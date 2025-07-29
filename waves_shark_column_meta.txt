@@ -45,7 +45,7 @@ hiline_width_50_eo|HI line-width at 50% of the peak flux of edge-on galaxy in re
 hiline_width_peak|HI line-width between flux peaks of inclined galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line.HI;stat.max|km/s|float32
 hiline_width_peak_eo|HI line-width between flux peaks of edge-on galaxy in rest-frame velocity unit|WavesDeepGals|spect.line.width;em.line.HI;stat.max|km/s|float32
 id_galaxy_sam|galaxy ID in SAM|WavesDeepGals|meta.id;src|None|int32
-id_galaxy_sky|unique galaxy ID in mock sky, from 1 to n|WavesDeepGals|meta.id;src|None|int32
+id_galaxy_sky|unique galaxy ID in mock sky, from 1 to n|WavesDeepGals|meta.id;meta.main|None|int32
 id_galaxy_sky_smart|unique galaxy ID in mock sky, smart format|WavesDeepGals|meta.id;src|None|int64
 id_group_sky|unique group ID if galaxy is in a group, -1 otherwise|WavesDeepGals|meta.id;src|None|int64
 id_halo_sam|host halo ID in SAM|WavesDeepGals|meta.id;src|None|int64
@@ -198,7 +198,7 @@ Band_150MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range
 dc|comoving distance|WavesDeepGalGroups|pos.distance|Mpc/h|float32
 dec|declination|WavesDeepGalGroups|pos.eq.dec;meta.main|deg|float32
 flag|group flag: 0 if group complete, >0 if truncated by survey edge (+1), snapshot limit (+2), tile edge (+4), shell edge (+8)|WavesDeepGalGroups|meta.code.qual|None|int32
-id_group_sky|unique parent halo ID in mock sky|WavesDeepGalGroups|meta.id;src|None|int64
+id_group_sky|unique parent halo ID in mock sky|WavesDeepGalGroups|meta.id;meta.main|None|int64
 id_halo_sam|parent halo ID in SAM|WavesDeepGalGroups|meta.id;src|None|int64
 mvir|virial ma|WavesDeepGalGroups|phys.mass;phys.virial|Msun/h|float32
 n_galaxies_selected|number of galaxies that live in the same group (host halo) and are present in the mock sky|WavesDeepGalGroups|meta.number|None|int32
@@ -262,7 +262,7 @@ hiline_width_50_eo|HI line-width at 50% of the peak flux of edge-on galaxy in re
 hiline_width_peak|HI line-width between flux peaks of inclined galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line.HI;stat.max|km/s|float32
 hiline_width_peak_eo|HI line-width between flux peaks of edge-on galaxy in rest-frame velocity unit|WavesWideGals|spect.line.width;em.line.HI;stat.max|km/s|float32
 id_galaxy_sam|galaxy ID in SAM|WavesWideGals|meta.id;src|None|int32
-id_galaxy_sky|unique galaxy ID in mock sky, from 1 to n|WavesWideGals|meta.id;src|None|int32
+id_galaxy_sky|unique galaxy ID in mock sky, from 1 to n|WavesWideGals|meta.id;meta.main|None|int32
 id_galaxy_sky_smart|unique galaxy ID in mock sky, smart format|WavesWideGals|meta.id;src|None|int64
 id_group_sky|unique group ID if galaxy is in a group, -1 otherwise|WavesWideGals|meta.id;src|None|int64
 id_halo_sam|host halo ID in SAM|WavesWideGals|meta.id;src|None|int64
@@ -415,7 +415,7 @@ Band_150MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range
 dc|comoving distance|WavesWideGalGroups|pos.distance|Mpc/h|float32
 dec|declination|WavesWideGalGroups|pos.eq.dec;meta.main|deg|float32
 flag|group flag: 0 if group complete, >0 if truncated by survey edge (+1), snapshot limit (+2), tile edge (+4), shell edge (+8)|WavesWideGalGroups|meta.code.qual|None|int32
-id_group_sky|unique parent halo ID in mock sky|WavesWideGalGroups|meta.id;src|None|int64
+id_group_sky|unique parent halo ID in mock sky|WavesWideGalGroups|meta.id;meta.main|None|int64
 id_halo_sam|parent halo ID in SAM|WavesWideGalGroups|meta.id;src|None|int64
 mvir|virial ma|WavesWideGalGroups|phys.mass;phys.virial|Msun/h|float32
 n_galaxies_selected|number of galaxies that live in the same group (host halo) and are present in the mock sky|WavesWideGalGroups|meta.number|None|int32

@@ -48,7 +48,7 @@
     "ra": "pos.eq.ra;meta.main",
     "dec": "pos.eq.dec;meta.main",
     "inclination": "src.orbital.inclination",
-    "id_galaxy_sky": "meta.id;src",
+    "id_galaxy_sky": "meta.id;meta.main",
     "id_galaxy_sky_smart": "meta.id;src",
     "id_group_sky": "meta.id;src",
     "id_galaxy_sam": "meta.id;src",

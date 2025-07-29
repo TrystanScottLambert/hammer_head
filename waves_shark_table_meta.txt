@@ -1,5 +1,5 @@
 name|description|documentation|group_name|filename|contact|date|version
-WavesDeepGals|This catalogue contains galaxies in the WAVES-deep mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=2||waves-deep|WavesDeepGals.csv|Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-28|v0.3.1
-WavesDeepGalGroups|This catalogue contains the groups in the WAVES-deep mock lightcone, up to a redshift of z=2||waves-deep|WavesDeepGalGroups.csv|Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-28|v0.3.1
-WavesWideGals|This catalogue contains galaxies in the WAVES-wide mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=1||waves-wide|WavesWideGals.csv|Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-28|v0.3.1
-WavesWideGalGroups|This catalogue contains the groups in the WAVES-wide mock lightcone, up to a redshift of z=1||waves-wide|WavesWideGalGroups.csv|Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-28|v0.3.1
+WavesDeepGals|This catalogue contains galaxies in the WAVES-deep mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=2||waves-deep|WavesDeepGals.csv|Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-29|v0.3.1
+WavesDeepGalGroups|This catalogue contains the groups in the WAVES-deep mock lightcone, up to a redshift of z=2||waves-deep|WavesDeepGalGroups.csv|Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-29|v0.3.1
+WavesWideGals|This catalogue contains galaxies in the WAVES-wide mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=1||waves-wide|WavesWideGals.csv|Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-29|v0.3.1
+WavesWideGalGroups|This catalogue contains the groups in the WAVES-wide mock lightcone, up to a redshift of z=1||waves-wide|WavesWideGalGroups.csv|Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-29|v0.3.1

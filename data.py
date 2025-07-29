@@ -83,6 +83,6 @@ def build_big_tables(
 
 if __name__ == "__main__":
     #build_big_tables("./", "shark_hdf5/", "mocksky", "Sting")
-    IN_DIR = "/scratch/pawsey0119/clagos/Stingray/medi-SURFS/Sharkv2-Lagos23-HBTTrees-bestparams/waves-wide/"
+    IN_DIR = "/scratch/pawsey0119/clagos/Stingray/medi-SURFS/Sharkv2-Lagos23-HBTTrees-bestparams/waves-deep/"
     OUT_DIR = "/scratch/pawsey0119/tlambert/mock_catalogs/data_central/"
     build_big_tables(OUT_DIR, IN_DIR,  "mocksky", "Sting-SED-eagle-rr14_")
