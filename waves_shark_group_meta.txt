@@ -1,3 +1,3 @@
 name|pretty_name|description|documentation|contact|date|version
-waves-deep|WAVES Deep|Shark mock lightcones in the geometry of WAVES-deep. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).||Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-29|v0.3.1
-waves-wide|WAVES Wide|Shark mock lightcones in the geometry of WAVES-wide. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).||Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-07-29|v0.3.1
+waves-deep|WAVES Deep|Shark mock lightcones in the geometry of WAVES-deep. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).||Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-08-20|v0.3.1
+waves-wide|WAVES Wide|Shark mock lightcones in the geometry of WAVES-wide. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).||Trystan Lambert <trystan.lambert@uwa.edu.au>|2025-08-20|v0.3.1

@@ -211,9 +211,9 @@ if __name__ == "__main__":
     INFILE_SED = "shark_hdf5/Sting-SED-eagle-rr14_00.hdf5"
 
     deep_gals_name = "WavesDeepGals"
-    deep_groups_name = "WavesDeepGalGroups"
+    deep_groups_name = "WavesDeepGroups"
     wide_gals_name = "WavesWideGals"
-    wide_groups_name = "WavesWideGalGroups"
+    wide_groups_name = "WavesWideGroups"
 
     table_wdg = create_metadata_table_from_mock(deep_gals_name, INFILE, FileType.GALAXIES)
     table_wdgg = create_metadata_table_from_mock(

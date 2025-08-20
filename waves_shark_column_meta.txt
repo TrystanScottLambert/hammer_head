@@ -195,27 +195,27 @@ Band_325MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range
 Band_325MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 799.45 mm - 1090.15 mm|WavesDeepGals|phys.magAbs|mag|float32
 Band_150MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range 1498.96 mm - 2997.92 mm|WavesDeepGals|phot.mag|mag|float32
 Band_150MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 1498.96 mm - 2997.92 mm|WavesDeepGals|phys.magAbs|mag|float32
-dc|comoving distance|WavesDeepGalGroups|pos.distance|Mpc/h|float32
-dec|declination|WavesDeepGalGroups|pos.eq.dec;meta.main|deg|float32
-flag|group flag: 0 if group complete, >0 if truncated by survey edge (+1), snapshot limit (+2), tile edge (+4), shell edge (+8)|WavesDeepGalGroups|meta.code.qual|None|int32
-id_group_sky|unique parent halo ID in mock sky|WavesDeepGalGroups|meta.id;meta.main|None|int64
-id_halo_sam|parent halo ID in SAM|WavesDeepGalGroups|meta.id;src|None|int64
-mvir|virial ma|WavesDeepGalGroups|phys.mass;phys.virial|Msun/h|float32
-n_galaxies_selected|number of galaxies that live in the same group (host halo) and are present in the mock sky|WavesDeepGalGroups|meta.number|None|int32
-n_galaxies_total|total number of galaxies that live in the same group (host halo)|WavesDeepGalGroups|meta.number|None|int32
-ra|right ascension|WavesDeepGalGroups|pos.eq.ra;meta.main|deg|float32
-sigma_3d_all|3D peculiar velocity dispersion of ALL group members, including non-detection|WavesDeepGalGroups|phys.veloc.dispersion|proper km/s|float32
-sigma_los_detected|line-of-sight peculiar velocity dispersion of detected group memb|WavesDeepGalGroups|phys.veloc.dispersion|proper km/s|float32
-snapshot|snapshot index|WavesDeepGalGroups|meta.dataset|None|int32
-subvolume|subvolume index|WavesDeepGalGroups|meta.dataset|None|int32
-tile|tile index in tiling array|WavesDeepGalGroups|meta.dataset|None|int32
-vpec_r|line-of-sight peculiar velocity|WavesDeepGalGroups|phys.veloc|proper km/s|float32
-vpec_x|x-component of peculiar velocity|WavesDeepGalGroups|phys.veloc;pos.cartesian.x|proper km/s|float32
-vpec_y|y-component of peculiar velocity|WavesDeepGalGroups|phys.veloc;pos.cartesian.y|proper km/s|float32
-vpec_z|z-component of peculiar velocity|WavesDeepGalGroups|phys.veloc;pos.cartesian.z|proper km/s|float32
-zcmb|redshift in CMB frame|WavesDeepGalGroups|src.redshift;pos.cmb|None|float32
-zcos|cosmological redshift without peculiar motions|WavesDeepGalGroups|src.redshift|None|float32
-zobs|redshift in observer-frame|WavesDeepGalGroups|src.redshift|None|float32
+dc|comoving distance|WavesDeepGroups|pos.distance|Mpc/h|float32
+dec|declination|WavesDeepGroups|pos.eq.dec;meta.main|deg|float32
+flag|group flag: 0 if group complete, >0 if truncated by survey edge (+1), snapshot limit (+2), tile edge (+4), shell edge (+8)|WavesDeepGroups|meta.code.qual|None|int32
+id_group_sky|unique parent halo ID in mock sky|WavesDeepGroups|meta.id;meta.main|None|int64
+id_halo_sam|parent halo ID in SAM|WavesDeepGroups|meta.id;src|None|int64
+mvir|virial ma|WavesDeepGroups|phys.mass;phys.virial|Msun/h|float32
+n_galaxies_selected|number of galaxies that live in the same group (host halo) and are present in the mock sky|WavesDeepGroups|meta.number|None|int32
+n_galaxies_total|total number of galaxies that live in the same group (host halo)|WavesDeepGroups|meta.number|None|int32
+ra|right ascension|WavesDeepGroups|pos.eq.ra;meta.main|deg|float32
+sigma_3d_all|3D peculiar velocity dispersion of ALL group members, including non-detection|WavesDeepGroups|phys.veloc.dispersion|proper km/s|float32
+sigma_los_detected|line-of-sight peculiar velocity dispersion of detected group memb|WavesDeepGroups|phys.veloc.dispersion|proper km/s|float32
+snapshot|snapshot index|WavesDeepGroups|meta.dataset|None|int32
+subvolume|subvolume index|WavesDeepGroups|meta.dataset|None|int32
+tile|tile index in tiling array|WavesDeepGroups|meta.dataset|None|int32
+vpec_r|line-of-sight peculiar velocity|WavesDeepGroups|phys.veloc|proper km/s|float32
+vpec_x|x-component of peculiar velocity|WavesDeepGroups|phys.veloc;pos.cartesian.x|proper km/s|float32
+vpec_y|y-component of peculiar velocity|WavesDeepGroups|phys.veloc;pos.cartesian.y|proper km/s|float32
+vpec_z|z-component of peculiar velocity|WavesDeepGroups|phys.veloc;pos.cartesian.z|proper km/s|float32
+zcmb|redshift in CMB frame|WavesDeepGroups|src.redshift;pos.cmb|None|float32
+zcos|cosmological redshift without peculiar motions|WavesDeepGroups|src.redshift|None|float32
+zobs|redshift in observer-frame|WavesDeepGroups|src.redshift|None|float32
 cnfw_subhalo|NFW concentration parameter of subhalo|WavesWideGals|phys.density|None|float32
 coline_flux_int_1|integrated CO(1-0) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
 coline_flux_int_10|integrated CO(10-9) line flux|WavesWideGals|phot.flux.density;em.line.CO|W/m^2|float32
@@ -412,24 +412,24 @@ Band_325MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range
 Band_325MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 799.45 mm - 1090.15 mm|WavesWideGals|phys.magAbs|mag|float32
 Band_150MHz_apparent_mag|Apparent magnitude in the top-hat filter over the range 1498.96 mm - 2997.92 mm|WavesWideGals|phot.mag|mag|float32
 Band_150MHz_absolute_mag|Absolute magnitude in the top-hat filter over the range 1498.96 mm - 2997.92 mm|WavesWideGals|phys.magAbs|mag|float32
-dc|comoving distance|WavesWideGalGroups|pos.distance|Mpc/h|float32
-dec|declination|WavesWideGalGroups|pos.eq.dec;meta.main|deg|float32
-flag|group flag: 0 if group complete, >0 if truncated by survey edge (+1), snapshot limit (+2), tile edge (+4), shell edge (+8)|WavesWideGalGroups|meta.code.qual|None|int32
-id_group_sky|unique parent halo ID in mock sky|WavesWideGalGroups|meta.id;meta.main|None|int64
-id_halo_sam|parent halo ID in SAM|WavesWideGalGroups|meta.id;src|None|int64
-mvir|virial ma|WavesWideGalGroups|phys.mass;phys.virial|Msun/h|float32
-n_galaxies_selected|number of galaxies that live in the same group (host halo) and are present in the mock sky|WavesWideGalGroups|meta.number|None|int32
-n_galaxies_total|total number of galaxies that live in the same group (host halo)|WavesWideGalGroups|meta.number|None|int32
-ra|right ascension|WavesWideGalGroups|pos.eq.ra;meta.main|deg|float32
-sigma_3d_all|3D peculiar velocity dispersion of ALL group members, including non-detection|WavesWideGalGroups|phys.veloc.dispersion|proper km/s|float32
-sigma_los_detected|line-of-sight peculiar velocity dispersion of detected group memb|WavesWideGalGroups|phys.veloc.dispersion|proper km/s|float32
-snapshot|snapshot index|WavesWideGalGroups|meta.dataset|None|int32
-subvolume|subvolume index|WavesWideGalGroups|meta.dataset|None|int32
-tile|tile index in tiling array|WavesWideGalGroups|meta.dataset|None|int32
-vpec_r|line-of-sight peculiar velocity|WavesWideGalGroups|phys.veloc|proper km/s|float32
-vpec_x|x-component of peculiar velocity|WavesWideGalGroups|phys.veloc;pos.cartesian.x|proper km/s|float32
-vpec_y|y-component of peculiar velocity|WavesWideGalGroups|phys.veloc;pos.cartesian.y|proper km/s|float32
-vpec_z|z-component of peculiar velocity|WavesWideGalGroups|phys.veloc;pos.cartesian.z|proper km/s|float32
-zcmb|redshift in CMB frame|WavesWideGalGroups|src.redshift;pos.cmb|None|float32
-zcos|cosmological redshift without peculiar motions|WavesWideGalGroups|src.redshift|None|float32
-zobs|redshift in observer-frame|WavesWideGalGroups|src.redshift|None|float32
+dc|comoving distance|WavesWideGroups|pos.distance|Mpc/h|float32
+dec|declination|WavesWideGroups|pos.eq.dec;meta.main|deg|float32
+flag|group flag: 0 if group complete, >0 if truncated by survey edge (+1), snapshot limit (+2), tile edge (+4), shell edge (+8)|WavesWideGroups|meta.code.qual|None|int32
+id_group_sky|unique parent halo ID in mock sky|WavesWideGroups|meta.id;meta.main|None|int64
+id_halo_sam|parent halo ID in SAM|WavesWideGroups|meta.id;src|None|int64
+mvir|virial ma|WavesWideGroups|phys.mass;phys.virial|Msun/h|float32
+n_galaxies_selected|number of galaxies that live in the same group (host halo) and are present in the mock sky|WavesWideGroups|meta.number|None|int32
+n_galaxies_total|total number of galaxies that live in the same group (host halo)|WavesWideGroups|meta.number|None|int32
+ra|right ascension|WavesWideGroups|pos.eq.ra;meta.main|deg|float32
+sigma_3d_all|3D peculiar velocity dispersion of ALL group members, including non-detection|WavesWideGroups|phys.veloc.dispersion|proper km/s|float32
+sigma_los_detected|line-of-sight peculiar velocity dispersion of detected group memb|WavesWideGroups|phys.veloc.dispersion|proper km/s|float32
+snapshot|snapshot index|WavesWideGroups|meta.dataset|None|int32
+subvolume|subvolume index|WavesWideGroups|meta.dataset|None|int32
+tile|tile index in tiling array|WavesWideGroups|meta.dataset|None|int32
+vpec_r|line-of-sight peculiar velocity|WavesWideGroups|phys.veloc|proper km/s|float32
+vpec_x|x-component of peculiar velocity|WavesWideGroups|phys.veloc;pos.cartesian.x|proper km/s|float32
+vpec_y|y-component of peculiar velocity|WavesWideGroups|phys.veloc;pos.cartesian.y|proper km/s|float32
+vpec_z|z-component of peculiar velocity|WavesWideGroups|phys.veloc;pos.cartesian.z|proper km/s|float32
+zcmb|redshift in CMB frame|WavesWideGroups|src.redshift;pos.cmb|None|float32
+zcos|cosmological redshift without peculiar motions|WavesWideGroups|src.redshift|None|float32
+zobs|redshift in observer-frame|WavesWideGroups|src.redshift|None|float32
