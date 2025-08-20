@@ -10,11 +10,13 @@ import json
 
 import h5py
 
+
 def today() -> str:
     """
     Returns todays date as a string in the YYYY-MM-DD
     """
     return date.today().strftime("%Y-%m-%d")
+
 
 BAND_RANGES = {
     "Band9_ALMA": "602 GHz - 720 GHz",
@@ -24,13 +26,13 @@ BAND_RANGES = {
     "Band5_ALMA": "163 GHz - 211 GHz",
     "Band4_ALMA": "125 GHz - 163 GHz",
     "Band3_ALMA": "84 GHz - 116 GHz",
-    "BandX_VLA":"24.98 mm - 37.47 mm",
-    "BandC_VLA":"37.47 mm - 74.95 mm",
-    "BandS_VLA":"74.95 mm - 149.9 mm",
-    "BandL_VLA":"149.9 mm - 299.79 mm",
-    "Band_610MHz":"454.23 mm - 535.34 mm",
-    "Band_325MHz":"799.45 mm - 1090.15 mm",
-    "Band_150MHz":"1498.96 mm - 2997.92 mm",
+    "BandX_VLA": "24.98 mm - 37.47 mm",
+    "BandC_VLA": "37.47 mm - 74.95 mm",
+    "BandS_VLA": "74.95 mm - 149.9 mm",
+    "BandL_VLA": "149.9 mm - 299.79 mm",
+    "Band_610MHz": "454.23 mm - 535.34 mm",
+    "Band_325MHz": "799.45 mm - 1090.15 mm",
+    "Band_150MHz": "1498.96 mm - 2997.92 mm",
 }
 
 
@@ -64,43 +66,55 @@ class Table:
     """
     Table data-structure for the meta data
     """
+
     name: str
     file_name: str
     description: str
     table_date: str = today()
-    documentation: str = ''
+    documentation: str = ""
+
 
 @dataclass
 class Group:
     """
     Group data-structure which stores tables.
     """
+
     name: str
     pretty_name: str
     tables: list[Table]
     description: str
-    contact: str = 'Trystan Lambert <trystan.lambert@uwa.edu.au>'
-    documentation: str = ''
-    group_date:str = today()
+    contact: str = "Trystan Lambert <trystan.lambert@uwa.edu.au>"
+    documentation: str = ""
+    group_date: str = today()
 
-def write_directory_meta_data(groups: list[Group], outfile_prefix: str, version: str) -> None:
+
+def write_directory_meta_data(
+    groups: list[Group], outfile_prefix: str, version: str
+) -> None:
     """
     Creates the table and group meta data .txt files for the given list of groups.
     outfile_prefix = 'shark' would give you shark_table_meta.txt and shark_group_meta.txt.
     """
-    group_file_name = f'{outfile_prefix}_group_meta.txt'
-    table_file_name = f'{outfile_prefix}_table_meta.txt'
+    group_file_name = f"{outfile_prefix}_group_meta.txt"
+    table_file_name = f"{outfile_prefix}_table_meta.txt"
 
-    with open(group_file_name, 'w', encoding='utf8') as file:
-        file.write('name|pretty_name|description|documentation|contact|date|version\n')
+    with open(group_file_name, "w", encoding="utf8") as file:
+        file.write("name|pretty_name|description|documentation|contact|date|version\n")
         for group in groups:
-            file.write(f"{group.name}|{group.pretty_name}|{group.description}|{group.documentation}|{group.contact}|{group.group_date}|{version}\n")
+            file.write(
+                f"{group.name}|{group.pretty_name}|{group.description}|{group.documentation}|{group.contact}|{group.group_date}|{version}\n"
+            )
 
-    with open(table_file_name, 'w', encoding='utf8') as file:
-        file.write('name|description|documentation|group_name|filename|contact|date|version\n')
+    with open(table_file_name, "w", encoding="utf8") as file:
+        file.write(
+            "name|description|documentation|group_name|filename|contact|date|version\n"
+        )
         for group in groups:
             for table in group.tables:
-                file.write(f"{table.name}|{table.description}|{table.documentation}|{group.name}|{table.file_name}|{group.contact}|{table.table_date}|{version}\n")
+                file.write(
+                    f"{table.name}|{table.description}|{table.documentation}|{group.name}|{table.file_name}|{group.contact}|{table.table_date}|{version}\n"
+                )
 
 
 class FileType(Enum):
@@ -205,42 +219,71 @@ def write_meta_data(
                     f"{meta_data.name}|{meta_data.description}|{meta_data.table_name}|{meta_data.ucd}|{meta_data.unit}|{meta_data.data_type}\n"
                 )
 
+
 if __name__ == "__main__":
     # Column Meta Data.
     INFILE = "shark_hdf5/mocksky.0.hdf5"
     INFILE_SED = "shark_hdf5/Sting-SED-eagle-rr14_00.hdf5"
 
-    deep_gals_name = "WavesDeepGals"
-    deep_groups_name = "WavesDeepGroups"
-    wide_gals_name = "WavesWideGals"
-    wide_groups_name = "WavesWideGroups"
+    DEEP_GALS_NAME = "WavesDeepGals"
+    DEEP_GROUPS_NAME = "WavesDeepGroups"
+    WIDE_GALS_NAME = "WavesWideGals"
+    WIDE_GROUPS_NAME = "WavesWideGroups"
 
-    table_wdg = create_metadata_table_from_mock(deep_gals_name, INFILE, FileType.GALAXIES)
+    table_wdg = create_metadata_table_from_mock(
+        DEEP_GALS_NAME, INFILE, FileType.GALAXIES
+    )
     table_wdgg = create_metadata_table_from_mock(
-        deep_groups_name, INFILE, FileType.GROUPS
+        DEEP_GROUPS_NAME, INFILE, FileType.GROUPS
     )
     table_wwg = create_metadata_table_from_mock(
-        wide_gals_name, INFILE, FileType.GALAXIES
+        WIDE_GALS_NAME, INFILE, FileType.GALAXIES
     )
     table_wwgg = create_metadata_table_from_mock(
-        wide_groups_name, INFILE, FileType.GROUPS
+        WIDE_GROUPS_NAME, INFILE, FileType.GROUPS
     )
 
-    table_sed_wd = create_metadata_table_from_sed(deep_gals_name, INFILE_SED)
-    table_sed_ww = create_metadata_table_from_sed(wide_gals_name, INFILE_SED)
+    table_sed_wd = create_metadata_table_from_sed(DEEP_GALS_NAME, INFILE_SED)
+    table_sed_ww = create_metadata_table_from_sed(WIDE_GALS_NAME, INFILE_SED)
 
     meta = [table_wdg, table_sed_wd, table_wdgg, table_wwg, table_sed_ww, table_wwgg]
     write_meta_data("waves_shark_column_meta.txt", meta)
 
     # Table and Group meta data.
-    table_deep_galaxies = Table(deep_gals_name, f"{deep_gals_name}.csv", "This catalogue contains galaxies in the WAVES-deep mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=2")
-    table_deep_groups = Table(deep_groups_name, f"{deep_groups_name}.csv", "This catalogue contains the groups in the WAVES-deep mock lightcone, up to a redshift of z=2")
-    table_wide_galaxies = Table(wide_gals_name, f"{wide_gals_name}.csv", "This catalogue contains galaxies in the WAVES-wide mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=1")
-    table_wide_groups = Table(wide_groups_name, f"{wide_groups_name}.csv", "This catalogue contains the groups in the WAVES-wide mock lightcone, up to a redshift of z=1")
+    table_deep_galaxies = Table(
+        DEEP_GALS_NAME,
+        f"{DEEP_GALS_NAME}.csv",
+        "This catalogue contains galaxies in the WAVES-deep mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=2",
+    )
+    table_deep_groups = Table(
+        DEEP_GROUPS_NAME,
+        f"{DEEP_GROUPS_NAME}.csv",
+        "This catalogue contains the groups in the WAVES-deep mock lightcone, up to a redshift of z=2",
+    )
+    table_wide_galaxies = Table(
+        WIDE_GALS_NAME,
+        f"{WIDE_GALS_NAME}.csv",
+        "This catalogue contains galaxies in the WAVES-wide mock lightcone with a pseudo-magnitude cut of <30 and up to a redshift of z=1",
+    )
+    table_wide_groups = Table(
+        WIDE_GROUPS_NAME,
+        f"{WIDE_GROUPS_NAME}.csv",
+        "This catalogue contains the groups in the WAVES-wide mock lightcone, up to a redshift of z=1",
+    )
 
-    with open("preamble.txt", encoding='utf8') as pre_file:
+    with open("preamble.txt", encoding="utf8") as pre_file:
         preamble = pre_file.readlines()
-    wide_group = Group("waves-wide", "WAVES Wide", [table_wide_galaxies, table_wide_groups], f"Shark mock lightcones in the geometry of WAVES-wide. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).")
-    deep_group = Group("waves-deep", "WAVES Deep", [table_deep_galaxies, table_deep_groups], f"Shark mock lightcones in the geometry of WAVES-deep. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).")
+    wide_group = Group(
+        "waves-wide",
+        "WAVES Wide",
+        [table_wide_galaxies, table_wide_groups],
+        "Shark mock lightcones in the geometry of WAVES-wide. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).",
+    )
+    deep_group = Group(
+        "waves-deep",
+        "WAVES Deep",
+        [table_deep_galaxies, table_deep_groups],
+        "Shark mock lightcones in the geometry of WAVES-deep. Please see instructions for citing (https://waves.wiki.org.au/en/Working-Groups/TWG8-Numerical-Simulations/Citing).",
+    )
 
     write_directory_meta_data([deep_group, wide_group], "waves_shark", "v0.3.1")
